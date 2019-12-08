@@ -3,7 +3,10 @@
 HackUCI-Web is the source code for the intro to web development 
 workshop for HackUCI 2019. The workshop will involve a live code demo to create a basic todo app that cover the following basics:
 
- * How to write HTML/CSS/JS
+ * What is HTML? and how do we write it?
+    - General HTML structure (head/body, divs)
+ * What is CSS? and how do we write it?
+ * 
 
 # Intro
 
@@ -22,7 +25,7 @@ not run computationally expensive programs and newly developed
 browsers running on these computers meant that the languages/frameworks 
 these browsers depended on did not support a wide range of actions.
 
-Today, websites are no longer limited to being just static sites.
+Today, websites are no longer limited to being just static sites. 
 
 # What can I do using web technologies?
 
@@ -30,8 +33,7 @@ Today, websites are no longer limited to being just static sites.
 # What will we learn?
 
 I'll admit I may have hyped you up a lil' bit but it's important to 
-understand truly how much potential the web has. Here, we'll go over 
-the basics of web development, writing a simple web app using HTML/CSS
-and adding functionality with Javascript. Hopefully, this demo will 
-be enjoyable and help support you in your web dev adventures should you 
-choose to learn more after the hackathon!
+understand truly how much potential the web has.
+
+Here, we'll go over the basics of web development, writing a simple 
+web app using HTML/CSS and adding functionality with Javascript.

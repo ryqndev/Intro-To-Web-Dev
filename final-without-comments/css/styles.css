@@ -1,12 +1,11 @@
 *{
     box-sizing: border-box;
-    /* Uncomment line below to see the outline of every div */
     /* border: 1px solid white; */
 }
 body{
     margin: 0;
-    color: white;
     font-family: 'Lato', sans-serif;
+    color: white;
     background-color: #272727;
 }
 .site-wrapper{
@@ -24,15 +23,15 @@ body{
     column-gap: 5px;
     height: 58px;
 }
-#day{
-    text-align: center;
-    font-size: 45px;
-    color: #FF00FF;
-}
 .date-inner-wrapper{
     display: grid;
     grid-auto-rows: 1fr;
     padding: 8px 0 5px 0;
+}
+#day{
+    text-align: center;
+    font-size: 45px;
+    color: #FF00FF;
 }
 #day-name{
     grid-column: 3/4;

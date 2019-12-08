@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Todo List App</title>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/styles.css">
+        <script src="./js/script.js"></script>
+    </head>
+    <body onload="load();">
+        <div class="site-wrapper">
+            <div class="header-wrapper">
+                <div class="date-wrapper">
+                    <div id="day">
+                        00
+                    </div>
+                    <div class="date-inner-wrapper">
+                        <div id="month">
+                            ---
+                        </div>
+                        <div id="year">
+                            0000
+                        </div>
+                    </div>
+                </div>
+                <div id="day-name">
+                    Some Day
+                </div>
+            </div>            
+            <div id="todo-list">
+                <div class="todo-user--add" onclick="askUserForTodo();">
+                    <div class="todo-content todo-content--add"> add an item </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

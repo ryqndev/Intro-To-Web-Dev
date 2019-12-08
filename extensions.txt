@@ -1,0 +1,10 @@
+akamud.vscode-theme-onedark
+christian-kohler.path-intellisense
+CoenraadS.bracket-pair-colorizer
+ecmel.vscode-html-css
+formulahendry.auto-close-tag
+ritwickdey.LiveServer
+VisualStudioExptTeam.vscodeintellicode
+vscode-icons-team.vscode-icons
+xabikos.JavaScriptSnippets
+Zignd.html-css-class-completion
