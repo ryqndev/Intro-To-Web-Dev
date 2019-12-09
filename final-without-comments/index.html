@@ -9,29 +9,27 @@
         <script src="./js/script.js"></script>
     </head>
     <body onload="load();">
-        <div class="site-wrapper">
-            <div class="header-wrapper">
-                <div class="date-wrapper">
-                    <div id="day">
-                        00
+        <div class="header-wrapper">
+            <div class="date-wrapper">
+                <div id="day">
+                    0
+                </div>
+                <div class="date-inner-wrapper">
+                    <div id="month">
+                        ---
                     </div>
-                    <div class="date-inner-wrapper">
-                        <div id="month">
-                            ---
-                        </div>
-                        <div id="year">
-                            0000
-                        </div>
+                    <div id="year">
+                        0000
                     </div>
                 </div>
-                <div id="day-name">
-                    Some Day
-                </div>
-            </div>            
-            <div id="todo-list">
-                <div class="todo-user--add" onclick="askUserForTodo();">
-                    <div class="todo-content todo-content--add"> add an item </div>
-                </div>
+            </div>
+            <div id="day-name">
+                Some Day
+            </div>
+        </div>            
+        <div id="todo-list">
+            <div class="todo-user--add" onclick="askUserForTodo();">
+                <div class="todo-content todo-content--add"> add an item </div>
             </div>
         </div>
     </body>
