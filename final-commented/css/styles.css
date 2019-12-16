@@ -1,0 +1,91 @@
+div{
+    /* Uncomment line below to see the outline of every div */
+    /* border: 1px solid white; */
+}
+body{
+    margin: 0;
+    /* color property sets text color */
+    color: white; 
+    /* font-family sets the font */
+    font-family: 'Lato', sans-serif;
+    /* background-color sets background color */
+    background-color: #272727;
+}
+.site-wrapper{
+    /* max width is essentiall this (if width > max-width, then width = max-width, otherwise, width) */
+    max-width: 450px;
+    /* margin 0 auto means set left and right margins as big as possible (therefore centering it) */
+    margin: 0 auto;
+}
+.header-wrapper{
+    /* display grid is NEEDED to use CSS grid */
+    display: grid;
+    /* template columns creates columns of each specified size */
+    grid-template-columns: 110px 1fr auto;
+    /* padding is the space between border and the content */
+    padding: 40px;
+}
+.date-wrapper{
+    display: grid;
+    grid-template-columns: 55px 45px;
+    /* how much room between each column in the grid */
+    column-gap: 5px;
+    height: 58px;
+}
+#day{
+    /* how to align the text inside */
+    text-align: center;
+    /* size of text */
+    font-size: 45px;
+    color: #FF00FF;
+}
+.date-inner-wrapper{
+    display: grid;
+    grid-auto-rows: 1fr;
+    /* another way of specifying padding. the values are as follows: top right bottom left */
+    padding: 8px 0 5px 0;
+}
+#day-name{
+    /* this specifies which grid areas it should take up */
+    grid-column: 3/4;
+    padding-top: 12px;
+    font-size: 26px;
+}
+#todo-list{
+    padding: 0 40px 40px 40px;
+    /* you can use the calc function to do very basic math */
+    height: calc( 100vh - 200px );
+    /* if vertical content is greater than the box it fits in, make it scroll */
+    overflow-y: scroll;
+}
+.todo-item{
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    padding: 10px;
+}
+.todo-check{
+    text-align: right;
+}
+.todo-complete{
+    color: grey;
+}
+.todo-user--add{
+    color: grey;
+    padding: 7px 0 10px 0;
+    margin: 20px 10px 5px 10px;
+    /* creates a border, values are as follows: thickness style color */
+    border: 2px dashed grey;
+    /* how round the borders should be, 50% will create an oval/circle */
+    border-radius: 20px;
+    /* transition makes specified css changes take longer instead of instantly so you get some smooth animations*/
+    transition: color 350ms, border-color 350ms;
+}
+/* :hover is added to specify which styles should be applied when a mouse hovers (doesn't work on mobile) */
+/* :active is for mouse clicks (works for mobile) */
+.todo-user--add:hover, .todo-user--add:active{
+    color: white;
+    border-color: #FF00FF;
+}
+.todo-content--add{
+    text-align: center;
+}

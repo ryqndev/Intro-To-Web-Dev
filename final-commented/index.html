@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- Specifies to browsers that they're reading an html docuent. It's really just
+here for legacy support so it's not really needed but always put it in -->
+
+<!-- All of our HTML code belongs inside the html tags -->
+<html>
+    <!-- head is where we put all our html code that doesn't really "display" anything.
+    Head usually contains all the meta data of a site (for ex. links to js code or css styles) -->
+    <head>
+        <!-- Makes mobile view normal -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Name of site (found in tab in browsers) -->
+        <title>Todo List App</title>
+
+        <!-- import Sweet Alert Library -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+        <!-- import Lato font from Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+        <!-- Our local css styles -->
+        <link rel="stylesheet" href="./css/styles.css">
+        <!-- Our local javascript code -->
+        <script src="./js/script.js"></script>
+    </head>
+    <!-- onload runs the code between the "" as javascript code. In this case, it's calling 
+    a function that was imported in our local javascript code -->
+    <body onload="load();">
+        <div class="site-wrapper">
+            <div class="header-wrapper">
+                <div class="date-wrapper">
+                    <!-- This div is specified by id so our javascript can target this element
+                    and alter it's content dynamically -->
+                    <div id="day">
+                        00
+                    </div>
+                    <div class="date-inner-wrapper">
+                        <!-- This div is specified by id so our javascript can target this element
+                        and alter it's content dynamically -->
+                        <div id="month">
+                            ---
+                        </div>
+                        <!-- This div is specified by id so our javascript can target this element
+                        and alter it's content dynamically -->
+                        <div id="year">
+                            0000
+                        </div>
+                    </div>
+                </div>
+                <!-- This div is specified by id so our javascript can target this element
+                and alter it's content dynamically -->
+                <div id="day-name">
+                    Some Day
+                </div>
+            </div>
+            
+            <div id="todo-list">
+                <!-- onclick is similar to the 'onload' in the body tag above where onload 
+                executes javascript when the document loads, onclick will execute whenever the
+                div is clicked (with mouse) or tapped (with finger on mobile) -->
+                <div class="todo-user--add" onclick="askUserForTodo();">
+                    <div class="todo-content todo-content--add"> add an item </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
