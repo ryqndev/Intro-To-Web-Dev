@@ -1,0 +1,31 @@
+#todo-list{
+    padding: 0 40px 40px 40px;
+    height: calc( 100vh - 200px );
+    /* overflow-y: scroll; */
+  }
+  .todo-item{
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    padding: 10px;
+  }
+  .todo-check{
+    text-align: right;
+  }
+  .todo-complete{
+    color: grey;
+  }
+  .todo-user--add{
+    color: grey;
+    padding: 7px 0 10px 0;
+    margin: 20px 10px 5px 10px;
+    border: 2px dashed grey;
+    border-radius: 20px;
+    transition: color 350ms, border-color 350ms;
+  }
+  .todo-user--add:hover, .todo-user--add:active{
+    color: white;
+    border-color: #FF00FF;
+  }
+  .todo-content--add{
+    text-align: center;
+  }

@@ -1,0 +1,30 @@
+.header-wrapper {
+    display: grid;
+    grid-template-columns: 110px 1fr auto;
+    padding: 40px;
+}
+
+.date-wrapper {
+    display: grid;
+    grid-template-columns: 55px 45px;
+    column-gap: 5px;
+    height: 58px;
+}
+
+#day {
+    text-align: center;
+    font-size: 45px;
+    color: #FF00FF;
+}
+
+.date-inner-wrapper {
+    display: grid;
+    grid-auto-rows: 1fr;
+    padding: 8px 0 5px 0;
+}
+
+#day-name {
+    grid-column: 3/4;
+    padding-top: 12px;
+    font-size: 26px;
+}
