@@ -127,10 +127,10 @@ The file structure of this repo looks like this (with some files not included fo
     ├── package.json
     ├── public
     └── src
-        ├── components
-        │   ├── App
-        │   ├── Header
-        │   └── TodoList
+        └── components
+            ├── App
+            ├── Header
+            └── TodoList
 ```
 
 | File/Folder     | Purpose |

@@ -46,15 +46,42 @@ benefits that frameworks share are not listed.
 
 # Where to start?
 
-If this is your first time writing React, you will need to install 
-[Node.js](https://nodejs.org/en/).
+## Start your own project and play with it
+1. Install Node.js
+2. Run these 3 lines in the terminal(Mac)/command prompt(Windows)
 
-*Note* This app was started using [create-react-app.](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app) and it's highly recommended 
-for starting new React projects.
+```bash
+npx create-react-app my-app
+cd my-app
+npm start
+```
+
+3. Success! What should happen is your computer will compile the 
+React source code into html/css/js and automatically open up a
+tab in your main browser accessing your website.
+
+What we just did was execute a script to automatically generate 
+the boilerplate code for a React project. This means a lot of 
+more production-ready tools have been set up for you so you can 
+focus on coding the actual content of your site, rather than spend 
+several hours learning the tools. (The main things they set up are 
+Babel, Webpack, PostCSS and ESLint. They are each different tools 
+that do something to make your code better. For example, Babel 
+transpiles your code so that every browser supports your function 
+and Webpack minifies your file size and compiles your code together. 
+Either way, you don't need to worry about this for a long time.)
 
 create-react-app will produce a similar structure as the one we have 
 right now so keep that in mind when you want to start a new project 
 from scratch.
+
+## Info about this project
+
+If this is your first time writing React, you will need to install 
+[Node.js](https://nodejs.org/en/).
+
+*Note* This app was started using [create-react-app.](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app) 
+and it's highly recommended for starting new React projects.
 
 The file structure for our project looks mostly like this.
 
@@ -90,4 +117,130 @@ The file structure for our project looks mostly like this.
 | public            | The folder that holds all the files that will be hosted publicly. This will be our assets such as images and videos, favicons, html, and anything else that should be public. |
 | src               | Here is where we do most of our coding. All of our source files will be here and then compiled into a final build folder that gets hosted online. |
 | components        | There is no standard for how we organize our code. However, there is a common design pattern that we put all of our components inside a components folder. I like to then put every component as well as their stylesheets into another folder. You can see how I put the code for the Header component and all of it's relevant files into it's own folder. |
+| index.js          | The starting point for our react project. This eventually calls App.js and App.js calls the other components. |
+| index.css         | The corresponding css file for index.js |
 
+*NOTE* This is a lot to take in so don't worry about understanding all 
+of this at first. I'll go through a simplified version of how this code 
+eventually translates into the html/css/js project we wrote earlier.
+
+# How React works
+
+Right off the bat, we see that there are a TON of more files than before. 
+Our original app was just 3 files and now we have not just files but also 
+folders of files.
+
+How can React make development *simpler* if we have 10x as many files? Well, 
+more files is usually way better. Eventually, your project will have thousands 
+if not millions of lines of code and if it was all enclosed inside that one html 
+file, debugging would be straight up impossible. The React architecture is based 
+off of the concept of components. Essentially, every block that has it's own 
+logic has all of it's corresponding code enclosed within that component's folder.
+
+If you're thinking that this modular design may seem very similar to Object 
+Oriented Programming (OOP), you're on the right track. In fact, before React 16.8, 
+components in React were written as objects and classes but now, we use hooks but 
+the concept is still the same.
+
+The idea of React is that every component has their own "state" and when the
+"state" changes, React will *react* to these changes and update the interface. 
+
+For example, if we were to create a simple clock app, we would likely have 
+a TimeDisplay component and it's state would be the current time. Whenever a 
+second passes, the state should change to reflect the new time. When the state 
+changes, React will *react* and update the UI with the new state automatically. 
+
+## React with our todo app
+
+If we were to translate this to our todo list app, we would most likely separate 
+our app into 2 main components. 
+
+*Note* Obviously, in a bigger app, a single webpage can have 
+tens to hundreds of components and having a separate file for every component 
+allows us to isolate all the code in one place to make debugging easier.
+
+Our app will essentially have a Header component - keeps track of the date and 
+displays it at the top, and a TodoList component - keeps track of the todo 
+content.
+
+We can, however break this down into an even smaller level. The content and 
+logic of each todo item has nothing to do with another. That allows us to 
+create another component called TodoItem and our TodoList will generate an 
+'array' of TodoItems. 
+
+## State
+
+Now, the question is, what state do these components have? Similar to the 
+clock example, our ```Header``` component will have a state containing the 
+current date and the ```TodoList``` will have a state containing an array 
+of every single item. Using its own state, the ```TodoList``` will then 
+generate an array of ```TodoItem```'s that display the content but will 
+each have their own little state called *complete* which holds a boolean 
+value for whether or not that ```TodoItem``` has been completed. 
+
+Notice how we now have no data being held at the global level. Every piece 
+of data is contained within the component that actually uses that logic. 
+This allows for a level of modularity and abstraction in our program that 
+the basic html/css/js wouldn't allow for. 
+
+React also does something out of the box for us. Remember how I said React 
+just *reacts* to things?
+
+Well, this takes care of some overhead. In our original html/css/js version, 
+we had to write a ```display()``` function that would update every html 
+element that we needed the content to change. In React, we don't need to do 
+that since we just mutate the state and the html will automatically change 
+without us needing to do anything.
+
+
+## How the actual HTML code gets generated
+
+The simplified version that helps to visualize how your code works is that 
+each component is a function with a return statement. The return returns 
+some type of HTML-looking code. This is actually a different language called 
+JSX but you can think of it as HTML with Javascript functionality. 
+
+*Note* This isn't how it *actually* works but you can visualize it like this.
+
+Our index.js 'renders' our program by rendering our ```<App />``` component 
+and injects the returned value into the div identified by "root" on line 7:
+```javascript
+ReactDOM.render(<App />, document.getElementById('root'));
+```
+
+But the question is, what gets rendered by App??
+
+Well, if we look into the return statement for App, we see this:
+```JSX
+return (
+    <div className="app">
+        <Header />
+        <TodoList />
+    </div>
+);
+```
+
+So our App actually returns a div with 2 children inside it: 
+- our Header component
+- our TodoList component
+
+The next question is, well, we know what a div is, but what is a
+Header and TodoList component? If we look at the import statements 
+in the first couple lines of the file:
+
+```javascript
+import TodoList from '../TodoList/TodoList';
+import Header from '../Header/Header';
+import './App.css';
+```
+ 
+We can see that we import the ```TodoList``` component from the path
+```../TodoList/TodoList``` and we can go there to look at the code 
+that gets returned from there and so on and so forth.
+
+# Conclusion
+
+This summarizes how React works on the surface. To look at how to 
+read and write React syntax and code, check out the individual 
+component files and look for the ones with '-commented' as they 
+have comments describing every line.

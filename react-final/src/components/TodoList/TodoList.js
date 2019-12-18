@@ -5,9 +5,10 @@ import './TodoList.css';
 function TodoItem({content}){
     const [complete, setComplete] = useState(false);
     const toggle = () => { setComplete(!complete) }
+
     return (
         <div className="todo-item" onClick={toggle}>
-            <div className={`todo-content ${complete && "todo-content"}`}> {content} </div>
+            <div className={"todo-content" + (complete && "todo-content")}> {content} </div>
             <div className="todo-check"> {complete ? "⦿" : "◯"} </div>
         </div>
     );
