@@ -11,19 +11,19 @@ const Header = () => {
     return (
         <div className="header-wrapper">
             <div className="date-wrapper">
-                <div id="day">
+                <div className="day">
                     {today.getDate()}
                 </div>
                 <div className="date-inner-wrapper">
-                    <div id="month">
+                    <div className="month">
                         {monthNames[today.getMonth()]}
                     </div>
-                    <div id="year">
+                    <div className="year">
                         {today.getFullYear()}
                     </div>
                 </div>
             </div>
-            <div id="day-name">
+            <div className="day-name">
                 {dayNames[today.getDay()]}
             </div>
         </div>

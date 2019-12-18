@@ -98,12 +98,15 @@ The file structure for our project looks mostly like this.
     ├── components
     │   ├── App
     │   │   ├── App.css
+    │   │   ├── App-commented.js
     │   │   └── App.js
     │   ├── Header
     │   │   ├── Header.css
+    │   │   ├── Header-commented.js
     │   │   └── Header.js
     │   └── TodoList
     │       ├── TodoList.css
+    │   │   ├── TodoList-commented.js
     │       └── TodoList.js
     ├── index.css
     ├── index.js
@@ -119,6 +122,9 @@ The file structure for our project looks mostly like this.
 | components        | There is no standard for how we organize our code. However, there is a common design pattern that we put all of our components inside a components folder. I like to then put every component as well as their stylesheets into another folder. You can see how I put the code for the Header component and all of it's relevant files into it's own folder. |
 | index.js          | The starting point for our react project. This eventually calls App.js and App.js calls the other components. |
 | index.css         | The corresponding css file for index.js |
+| *-commented.js    | The files appended by '-commented.js' are the commented versions of the 
+original component source code. Every line will be explained. You can start with index.js and 
+follow the lines of comments to see how the code works |
 
 *NOTE* This is a lot to take in so don't worry about understanding all 
 of this at first. I'll go through a simplified version of how this code 

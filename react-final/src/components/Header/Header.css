@@ -11,7 +11,7 @@
     height: 58px;
 }
 
-#day {
+.day {
     text-align: center;
     font-size: 45px;
     color: #FF00FF;
@@ -23,7 +23,7 @@
     padding: 8px 0 5px 0;
 }
 
-#day-name {
+.day-name {
     grid-column: 3/4;
     padding-top: 12px;
     font-size: 26px;
