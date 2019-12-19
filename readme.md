@@ -1,3 +1,13 @@
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge&color=blueviolet)](https://lbesson.mit-license.org/) 
+![GitHub top language](https://img.shields.io/github/languages/top/ryqndev/HackUCI-Demo?style=for-the-badge) ![GitHub repo size](https://img.shields.io/github/repo-size/ryqndev/HackUCI-Demo?style=for-the-badge&color=success)
+
+
+# HackUCI-Demo
+
+<p align="center">
+    <img src="./assets/design.png" max-height=400 alt="todo app design">
+</p>
+
 # What is this?
 
 HackUCI-Demo is the source code for the intro to web development 
@@ -24,6 +34,7 @@ the code, go straight [here](#where-to-start)
     2. [Cross-Platform](#2-cross-platform)
     * [Cons](#CONS)
 * [Where do I start?](#where-to-start)
+* [Licence](#license)
 
 # Intro
 
@@ -181,3 +192,6 @@ Some of the above are folders. Those folders will have README.md files that
 explain the contents of those inner files/folders so don't worry.
 
 The relevant ones are [final, final-commented, and react-final]
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
