@@ -2,7 +2,7 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/ryqndev/HackUCI-Demo?style=for-the-badge) ![GitHub repo size](https://img.shields.io/github/repo-size/ryqndev/HackUCI-Demo?style=for-the-badge&color=success)
 
 
-# HackUCI-Demo
+# Intro to Web Dev
 
 <p align="center">
     <img src="./assets/design.png" height=350 alt="todo app design">
@@ -10,7 +10,7 @@
 
 # What is this?
 
-HackUCI-Demo is the source code for the intro to web development 
+Intro to Web Dev is the source code for the intro to web development 
 workshop for HackUCI 2019. The workshop will involve a live code demo 
 to create a basic todo app that cover the following basics:
 
@@ -154,7 +154,14 @@ you'll have enough here to get started on your journey into web-dev.
 This repo contains the source code for the todo app example that I will live code 
 to teach fundamental web-development. 
 
-The file structure of this repo looks like this (with some files not included for simplicity)
+If you're learning html/css/js for the first time, check out final-commented 
+to understand the html/css/js code.
+
+If you're learning React, check out the react-final folder and the readme.md file 
+on that page.
+
+The file structure of this repo looks like this (with some files not included 
+for simplicity)
 
 ```bash
 ├── LICENSE
