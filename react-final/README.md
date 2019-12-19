@@ -122,9 +122,7 @@ The file structure for our project looks mostly like this.
 | components        | There is no standard for how we organize our code. However, there is a common design pattern that we put all of our components inside a components folder. I like to then put every component as well as their stylesheets into another folder. You can see how I put the code for the Header component and all of it's relevant files into it's own folder. |
 | index.js          | The starting point for our react project. This eventually calls App.js and App.js calls the other components. |
 | index.css         | The corresponding css file for index.js |
-| *-commented.js    | The files appended by '-commented.js' are the commented versions of the 
-original component source code. Every line will be explained. You can start with index.js and 
-follow the lines of comments to see how the code works |
+| *-commented.js    | The files appended by '-commented.js' are the commented versions of the original component source code. Every line will be explained. You can start with index.js and follow the lines of comments to see how the code works |
 
 *NOTE* This is a lot to take in so don't worry about understanding all 
 of this at first. I'll go through a simplified version of how this code 
@@ -139,9 +137,16 @@ folders of files.
 How can React make development *simpler* if we have 10x as many files? Well, 
 more files is usually way better. Eventually, your project will have thousands 
 if not millions of lines of code and if it was all enclosed inside that one html 
-file, debugging would be straight up impossible. The React architecture is based 
-off of the concept of components. Essentially, every block that has it's own 
-logic has all of it's corresponding code enclosed within that component's folder.
+file, debugging would be straight up impossible. 
+
+The React architecture essentially breaks down your website/app into components. 
+Every component that has its own logic can be separated into its own file. Instead 
+of building the entire site at once, we build every part by itself and then tie 
+everything together. 
+
+Similar to how we build a car by breaking it down to parts: make the tires, steering 
+wheel, axles, seats, frame separately and then tie it all together rather than build 
+the front, middle, then back of the car.
 
 If you're thinking that this modular design may seem very similar to Object 
 Oriented Programming (OOP), you're on the right track. In fact, before React 16.8, 

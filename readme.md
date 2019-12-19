@@ -1,8 +1,8 @@
 # What is this?
 
-HackUCI-Web is the source code for the intro to web development 
-workshop for HackUCI 2019. The workshop will involve a live code demo to create a basic 
-todo app that cover the following basics:
+HackUCI-Demo is the source code for the intro to web development 
+workshop for HackUCI 2019. The workshop will involve a live code demo 
+to create a basic todo app that cover the following basics:
 
  * What is HTML? and how do we write it?
  * What is CSS? and how do we write it?
@@ -10,12 +10,12 @@ todo app that cover the following basics:
  
  * What is React? and how do we write it?
 
-There's a lot of background information here so if you want to skip to the code, 
-go straight [here](#where-to-start)
+There's a lot of background information here so if you want to skip to 
+the code, go straight [here](#where-to-start)
 
 # Intro
 
-![Yahoo in 2001](./yahoo-old.png)
+![Yahoo in 2001](./assets/yahoo-old.png)
 
 The technological limitations of computers, browsers 
 and internet speed a decade ago resulted in a system where a vast 
@@ -31,6 +31,28 @@ browsers running on these computers meant that the languages/frameworks
 these browsers depended on did not support a wide range of actions.
 
 Today, websites are no longer limited to being just static sites. 
+
+# What is web development?
+
+Web development encompasses everything relating to creating 
+websites and applications for the World Wide Web. 
+
+# Terms to Understand
+
+I'll be teaching Front-end development and then we'll go over how to connect 
+your front-end to the back-end. But first, we need to understand the terms I'll 
+using.
+
+![Front-end vs. Back-end infographic](./assets/frontendvsbackend.png)
+
+| Term             | Definition  |
+|------------------|-------------|
+| Web Dev          | Development of applications for the Web |
+| Web Technologies | The technology available today that we can do web dev with. For example, WebGL is a library that simplifies developing complex 3d applications for the browser.          |
+| Front-End/Client | The presentation layer of an app. This usually refers to the website and how it looks to the user - therefore, "presentation".                                              |
+| Back-End/Server  | The backend is where the business logic runs. For example, looking at a site like an [online integral calculator](https://www.integral-calculator.com/), The front-end would be the form to accept and parse a user input and then it would send the user input to the backend - which is a server that does the actual integral calculation and sends it back to the client. |
+| Full-Stack       | Front-End + Back-End. For example, a full-stack developer is capable of developing a front-end interface and setting up and maintaining the backend servers that run the main logic.           |
+
 
 # What can I do using web technologies?
 
@@ -57,16 +79,16 @@ everything that you would normally see as an app or downloadable software.
 If someone asked you to check out an app, would you be more inclined to download 
 it from the app store or just open up the website? And thus, our first point of contention -
 
-### 1. ease of access
+### 1. Ease of Access
 
 Why look for an app and download it just to try it when you can just click a 
 link your friend sends you?
 
-### 2. cross-platform
+### 2. Cross-Platform
 
 iOS, OSX, Android, Window, and pretty much every other user-friendly system that 
-exists has a browser that executes the exact same html/css/js code and produces *nearly* 
-the same results.
+exists has a **browser** (Firefox, Chrome, IE, Edge) that executes the exact same 
+html/css/js code and produces *nearly* the same results. 
 
 However, if you were to develop natively, here's the general list:
 

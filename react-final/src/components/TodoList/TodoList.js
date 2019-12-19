@@ -8,7 +8,7 @@ function TodoItem({content}){
 
     return (
         <div className="todo-item" onClick={toggle}>
-            <div className={"todo-content" + (complete && "todo-content")}> {content} </div>
+            <div className={"todo-content" + (complete && " todo-complete")}> {content} </div>
             <div className="todo-check"> {complete ? "⦿" : "◯"} </div>
         </div>
     );

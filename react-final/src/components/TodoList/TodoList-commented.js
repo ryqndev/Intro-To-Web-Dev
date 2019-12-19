@@ -14,13 +14,21 @@ import React, {useState} from 'react';
 import Swal from 'sweetalert2';
 import './TodoList.css';
 
+/**
+ * @component TodoItem - This is the code for a singular todo item. 
+ * 
+ * 
+ * @param {} content - The TodoItem component takes in a parameter 
+ * called 'content'. This parameter represents the text content 
+ * of the TodoItem that should be displayed. 
+ */
 function TodoItem({content}){
     const [complete, setComplete] = useState(false);
     const toggle = () => { setComplete(!complete) }
 
     return (
         <div className="todo-item" onClick={toggle}>
-            <div className={"todo-content" + (complete && "todo-content")}> {content} </div>
+            <div className={"todo-content" + (complete && " todo-complete")}> {content} </div>
             <div className="todo-check"> {complete ? "⦿" : "◯"} </div>
         </div>
     );
