@@ -5,7 +5,7 @@
 # HackUCI-Demo
 
 <p align="center">
-    <img src="./assets/design.png" style="max-height: 500px;" alt="todo app design">
+    <img src="./assets/design.png" height=350 alt="todo app design">
 </p>
 
 # What is this?
