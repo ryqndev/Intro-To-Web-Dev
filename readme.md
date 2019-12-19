@@ -13,6 +13,18 @@ to create a basic todo app that cover the following basics:
 There's a lot of background information here so if you want to skip to 
 the code, go straight [here](#where-to-start)
 
+# Table of Contents
+
+* [Intro](#intro)
+* [What is Web Development?](#what-is-web-development)
+* [Terms to Understand](#terms-to-understand)
+* [What can I do with Web Technologies?](#what-can-i-do-using-web-technologies)
+* [Why Web Apps over Native Apps](#then-why-the-web-if-we-can-do-it-natively-as-an-appsoftware)
+    1. [Ease of Acess](#1-ease-of-access)
+    2. [Cross-Platform](#2-cross-platform)
+    * [Cons](#CONS)
+* [Where do I start?](#where-to-start)
+
 # Intro
 
 ![Yahoo in 2001](./assets/yahoo-old.png)
