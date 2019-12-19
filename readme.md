@@ -5,7 +5,7 @@
 # Intro to Web Dev
 
 <p align="center">
-    <img src="./assets/design.png" height="350px" alt="todo app design" />>
+    <img src="./assets/design.png" height="350px" alt="todo app design" />
 </p>
 
 # What is this?
