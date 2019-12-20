@@ -43,7 +43,12 @@ function TodoList(){
             input: 'text',
             inputPlaceholder: 'Enter Name of Todo'
         });
+        // Here, we use the spread syntax '...' to set our state 
+        // to the value of everything inside todos and then add 
+        // an extra element equal to text
         if(text) setTodos([ ...todos, text ])
+        // [...todos, text] is essentially the same thing as 
+        // writing [todos[1], todos[2], ... , todos[n], text]
     }
 
     return (

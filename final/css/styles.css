@@ -3,6 +3,9 @@ html{
     color: white;
     background-color: #272727;
 }
+div{
+    /* border: 1px solid white; */
+}
 body{
     max-width: 450px;
     margin: 0 auto;

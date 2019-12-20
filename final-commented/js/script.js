@@ -112,18 +112,56 @@ function createTodoItem(item, index){
             <div class="todo-check"> ${item.isComplete ? "X" : "L"} </div>
         </div>
     `;
+    // this is a DOM api that allows us to directly manipulate the html
+    // Here, we set the HTML inside a div to the template variable
     document.getElementById('todo-list').innerHTML += template;
 }
+
+/**
+ * @function toggle - Toggles the isComplete attribute of a userTodo item
+ * @param {Number} index - index is an integer that has the value of
+ * the index in which the current item data is stored in the userTodos
+ * array
+ */
 function toggle(index){
+    // toggles boolean value
     userTodos[index].isComplete = !userTodos[index].isComplete;
+    // After changing the value, should also change the display value
     display();
 }
+
+/**
+ * @function askUserForTodo - This is an asynchronous function. Asynchronous
+ * functions allow us execute functions without blocking the rest of the 
+ * program. In this case, we have a popup that needs to wait for the user
+ * to type something in. Then, we can continue the rest of the function. 
+ * Let's say that there was a javascript function that changes the color 
+ * of the background every 2 seconds. It doesn't make sense for the program 
+ * to halt that action just because we're waiting for a user input.abs
+ * 
+ * Asynchronous functions allow us to do other stuff when we know that a 
+ * certain function is going to take a long time to complete. Another example 
+ * of a function that is asynchronous are network calls. If you wanted to
+ * get some data from your backend, for example, you would first display your
+ * website and then fill in the data with some loading text like "getting your 
+ * results..." and then after your network call succeeds, you change the values. 
+ * Otherwise, your user may be left looking at a blank screen until the network 
+ * call finishes. In the case that they have poor internet and there's a lot of
+ * data to send, the user may end up looking at a blank screen and probably
+ * just quit your site.
+ */
 async function askUserForTodo(){
+
+    // This is the code for using the Sweet Alert Library. You can read more
+    // in their docs here: https://sweetalert2.github.io/
     const { value: text } = await Swal.fire({
         title: 'Add Todo',
         input: 'text',
         inputPlaceholder: 'Enter Name of Todo'
     });
+
+    // If the user types something into the input, then add it as an item,
+    // We don't want to add empty todo items
     if(text){
         addItem(text);
     }
