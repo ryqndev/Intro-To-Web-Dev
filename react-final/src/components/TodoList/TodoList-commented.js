@@ -15,8 +15,49 @@ import Swal from 'sweetalert2';
 import './TodoList.css';
 
 /**
+ * @component TodoList - This is the code to generate the list of TodoItems. 
+ */
+function TodoList(){
+    const [todos, setTodos] = useState([]);
+
+    const add = async () => {
+
+        // This calls a function in the Sweet Alert library
+        // Look at the swal2 docs to better understand how to
+        // use it properly
+        // Swal2 docs: https://sweetalert2.github.io/
+        const { value: text } = await Swal.fire({
+            title: 'Add Todo',
+            input: 'text',
+            inputPlaceholder: 'Enter Name of Todo'
+        });
+
+        // Here, we use the spread syntax '...' to set our state 
+        // to the value of everything inside todos and then add 
+        // an extra element equal to text
+        if(text) setTodos([ ...todos, text ])
+        // [...todos, text] is essentially the same thing as 
+        // writing [todos[1], todos[2], ... , todos[n], text]
+        // Spread syntax docs: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+    }
+
+    return (
+        <div id="todo-list">
+            {/* 
+              * Here, the map functions runs an operation to generate a TodoItem for
+              * every element in the todo array.
+              * JS Map docs: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+              */}
+            { todos.map( (e, i) => <TodoItem key={i} content={e}/> ) }
+            <div className="todo-user--add" onClick={add}>
+                <div className="todo-content todo-content--add"> add an item </div>
+            </div>
+        </div>
+    )
+}
+
+/**
  * @component TodoItem - This is the code for a singular todo item. 
- * 
  * 
  * @param {} content - The TodoItem component takes in a parameter 
  * called 'content'. This parameter represents the text content 
@@ -32,33 +73,6 @@ function TodoItem({content}){
             <div className="todo-check"> {complete ? "⦿" : "◯"} </div>
         </div>
     );
-}
-
-function TodoList(){
-    const [todos, setTodos] = useState([]);
-
-    const add = async () => {
-        const { value: text } = await Swal.fire({
-            title: 'Add Todo',
-            input: 'text',
-            inputPlaceholder: 'Enter Name of Todo'
-        });
-        // Here, we use the spread syntax '...' to set our state 
-        // to the value of everything inside todos and then add 
-        // an extra element equal to text
-        if(text) setTodos([ ...todos, text ])
-        // [...todos, text] is essentially the same thing as 
-        // writing [todos[1], todos[2], ... , todos[n], text]
-    }
-
-    return (
-        <div id="todo-list">
-            { todos.map( (e, i) => <TodoItem key={i} content={e}/> ) }
-            <div className="todo-user--add" onClick={add}>
-                <div className="todo-content todo-content--add"> add an item </div>
-            </div>
-        </div>
-    )
 }
 
 export default TodoList;

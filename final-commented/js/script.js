@@ -54,6 +54,8 @@ let userTodos = [];
 function load(){
     let today = new Date();
 
+    // document.getEleme... is a DOM function. DOM functions are how you can 
+    // use javascript
     document.getElementById('day').innerText = today.getDate();
     document.getElementById('month').innerText = monthNames[today.getMonth()];
     document.getElementById('year').innerText = today.getFullYear();
