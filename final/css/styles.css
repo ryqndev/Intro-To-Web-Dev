@@ -39,7 +39,7 @@ body{
 #todo-list{
     padding: 0 40px 40px 40px;
     height: calc( 100vh - 200px );
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 .todo-item{
     display: grid;

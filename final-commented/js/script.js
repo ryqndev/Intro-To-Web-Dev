@@ -111,7 +111,7 @@ function createTodoItem(item, index){
     let template = `
         <div class="todo-item" onclick="toggle(${index});">
             <div class="todo-content ${item.isComplete && "todo-complete"}"> ${item.todoContent} </div>
-            <div class="todo-check"> ${item.isComplete ? "X" : "L"} </div>
+            <div class="todo-check"> ${item.isComplete ? "⦿" : "◯"} </div>
         </div>
     `;
     // this is a DOM api that allows us to directly manipulate the html
