@@ -38,7 +38,7 @@ const dayNames = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Frid
  * 1. content - The string value of the name or description of the task 
  * 2. isComplete - a boolean value that indicates whether that task is complete or not
  */
-let userTodos = [];
+let userTodos = [  ];
 
 /**
  * @function load - a function that gets called when the website loads
@@ -153,7 +153,6 @@ function toggle(index){
  * just quit your site.
  */
 async function askUserForTodo(){
-
     // This is the code for using the Sweet Alert Library. You can read more
     // in their docs here: https://sweetalert2.github.io/
     const { value: text } = await Swal.fire({

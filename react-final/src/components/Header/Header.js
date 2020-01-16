@@ -27,7 +27,7 @@ const Header = () => {
                 {dayNames[today.getDay()]}
             </div>
         </div>
-    )
+    );
 }
 
 export default Header;
