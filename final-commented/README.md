@@ -228,6 +228,16 @@ arr.map((element, index) => {
 
 which is the same thing as the map function above except with an arrow function instead
 
+## Network Calls/Fetch
+
+```js
+let url = "https://n161.tech/api/dummyapi/user";
+fetch(url).then(response => {return response.json();}).then(response => {
+  console.log(response)l
+});
+```
+
+
 # Putting it all together
 
 A quick sample program of how it would all wrap up together
