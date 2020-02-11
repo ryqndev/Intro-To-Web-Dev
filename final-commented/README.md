@@ -233,7 +233,7 @@ which is the same thing as the map function above except with an arrow function 
 ```js
 let url = "https://n161.tech/api/dummyapi/user";
 fetch(url).then(response => {return response.json();}).then(response => {
-  console.log(response)l
+  console.log(response);
 });
 ```
 
