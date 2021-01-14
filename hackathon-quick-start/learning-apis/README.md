@@ -1,10 +1,12 @@
 # API Calls (~2 min read)
 
-Here, we will learn about API's and how to incorporate them into our app. First, we should first learn about what an API is. At hackathons, we will mostly be dealing with Web API's - and that is where we will start.
+First, we should first learn about what an API is. API is a general term but at hackathons, we will mostly be dealing with Web API's.
 
 ### API - Application Programming Interface
 
-We can think of Web API's as a way to connect to a service. For most hackathon projects, hackers will utilize one or more API's in their app and build around them. I think the textbook definition of an API is hard to explain and take in so let's just go ahead and explore a sample scenario.
+The definition for API in general is simply a way for two pieces of software to communicate with one another. Web API's are a subset of API's that in which the two pieces of software use HTTP requests to communicate. 
+
+For most hackathon projects, hackers will utilize one or more API's in their app and build around them. I think the textbook definition of an API is hard to explain and take in so let's just go ahead and explore a sample scenario.
 
 ### Scenario 1: Music App
 
