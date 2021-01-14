@@ -7,9 +7,9 @@ the content and structure of a website and only that. If you were to write 2 + 2
 it would literally just display "2 + 2" and not calculate 4.
 
 With this in mind, know that pretty much all text that you write in your html file will end 
-up being displayed on the website and that's because the text in html defines the content 
+up being displayed on the website and that's because the text in html defines the *content* 
 of your website. Aside from text, you'll find something called "tags" in html. Tags can be
-recognized as text with angled brackets (< and >). Tags are what we use to denote the structure
+recognized as text with angled brackets (< and >). Tags are what we use to denote the *structure*
 of a webpage. Most HTML tags are opened with an opening tag <tagName> and then closed with a 
 closing tag </tagName>. Note that the difference between the two is that the closing tag name 
 is prefixed with a backslash '/'.
@@ -46,7 +46,9 @@ create any website you want.
 
 This is probably not what we want our website to look like since this is fairly
 plain-looking (unless that's what you want) and so the next tool we're going to
-reach for is called CSS
+reach for is called CSS.
+
+Main takeaway: HTML defines the *content* and *structure* of the webpage.
 
 # Understanding CSS
 
@@ -118,6 +120,8 @@ the way we write this will look like this:
 Which results in this:
 
 ![Boring Button](readme-images/boring_button.png "HTML/CSS example")
+
+Main takeaway: CSS makes the webpage look pretty by styling the HTML.
 
 # Understanding Javascript
 
@@ -274,3 +278,5 @@ function clicked(){
   console.log("I got clicked!");
 }
 ```
+
+Main takeaway: JS is what brings interactivity to our site, and is what turns a webpage into a webapp.
