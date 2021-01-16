@@ -1,0 +1,16 @@
+body {
+    display: grid;
+    background-color: #151515;
+    color: #FFFFFF;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Nunito';
+}
+.card{
+    place-self: center;
+    padding: 20px;
+    box-shadow: 0px 0px 4px #000000;
+    border-radius: 4px;
+}
+
+

@@ -6,3 +6,14 @@
 
  */
 
+function iLoaded(){
+    console.log("I loaded!");
+}
+
+function iGotClicked(){
+    fetch('https://disease.sh/v3/covid-19/all').then(response => {
+        return response.json();
+    }).then(parsedResponse => {
+        document.getElementById('update-me').innerText = "Cases: " + parsedResponse.cases;
+    });
+}
