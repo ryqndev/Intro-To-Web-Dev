@@ -8,9 +8,11 @@ The definition for API in general is simply a way for two pieces of software to 
 
 Spotify is a digital streaming service that streams music. Because of this business model, they need to have a database of pretty much every single song in the world. Spotify also offers a Web API that allows developers to *communicate* with their service through http requests. For example, if you want to have a feature in which a user can search for songs, you can use the spotify Web API Browse endpoint.
 
-So how does Spotify's Web API fit the definition of an API? Well, imagine we're writing a music based app - let's say an app in which users swipe left and right (like Tinder) on random songs and all the songs that they swipe right on will get saved into their own playlist. To implement this, we need to access Spotify's database of songs to pull random songs and after the user is done swiping, we need to then access the Spotify database again and create a playlist, add all the swiped songs, and finally return the playlist link. In this example, our webapp needs to communicate with the Spotify servers and this is done through HTTP requests. The Spotify Web API is a piece of software that exists on top of the main Spotify servers that allows external developers to communicate with them. The Web API will also have documentation that says exactly how to do this.
+### How can we use API's?
 
-## Some API's to look at
+Well, imagine we're writing a music based app - let's say an app in which users swipe left and right (like Tinder) on random songs and all the songs that they swipe right on will get saved into their own playlist. To implement this, we will "call" Spotify's Web API to to pull random songs and after the user is done swiping, we need to then call the Spotify Web API again to create a playlist, add all the swiped songs, and finally return the playlist link. Everytime we "call" the Spotify Web API, we are making an HTTP request to a specific "endpoint".
+
+## Some free API's to look at
 
 [Spotify](https://developer.spotify.com/documentation/)
 * Get song, artist, album information
@@ -30,8 +32,6 @@ So how does Spotify's Web API fit the definition of an API? Well, imagine we're 
 * gets latest stock data
 * gets prices, lows, highs and all time data for most stock exchanges
 * _note_: needs api key but extremely simple process
-
-
 
 
 ### Why do companies offer API's?

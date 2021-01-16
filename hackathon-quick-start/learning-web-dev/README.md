@@ -19,4 +19,4 @@ How do I get started on web dev? You only need 2 things: a text editor and a bro
 
 ## Learning Web Dev
 
-First, install the various extensions on VSCode that I have listed in the extensions.txt file. These aren't required to run your programs but highly recommended to make developing easier. 
+First, install the various extensions on VSCode that I have listed in the extensions.txt file. These aren't required to run your programs but highly recommended to make developing easier. Next, check out the [final-commented folder](https://github.com/ryqndev/Intro-To-Web-Dev/tree/master/final-commented) in the root directory of this folder to learn HTML/CSS/JS. After that, you can check out how to make api calls starting with [learning-http-requests](https://github.com/ryqndev/Intro-To-Web-Dev/tree/master/hackathon-quick-start/learning-http-requests).
