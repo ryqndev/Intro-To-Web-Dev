@@ -15,6 +15,8 @@ If you feel pretty comfortable with HTML/CSS/JS or if you're not planning on doi
 ```bash
 ├── README.md
 ├── extensions.txt
+├── hackathon-faqs
+│   └── README.md
 ├── learning-web-dev
 │   └── README.md
 ├── learning-apis
@@ -31,7 +33,8 @@ If you feel pretty comfortable with HTML/CSS/JS or if you're not planning on doi
 |------------------|---------|
 | README.md        | That's this you're reading right now. Just a description to display on the Github repo |
 | extensions.txt   | Here are all the extensions I'm using that are relevant to the demo. They are available on VSCode and you can search them up in the extensions search bar to install them. (this is the same as the extensions.txt file in the main directory)|
+| hackathon-faqs   | Just some general info about hackathons  |\
 | learning-web-dev | A brief introduction that gives some background info on web dev with a focus on in the context of a hackathon.  |\
-| learning-apis    | What are API's and why do we need them? We explore the idea behind API's here. |
+| learning-apis    | What are API's and why do we need them? We explore the idea behind API's here. |\
 | learning-http-requests | After learning about what an API is, we go ahead and take a look at how we utilize http requests to make api cals  |
 

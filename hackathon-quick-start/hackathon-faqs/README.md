@@ -50,6 +50,8 @@ Workshops are like lectures but instead of being given by professors, it's usual
 ##### Food
 Virtual hackathons - sorry there's no such thing as virtual food.
 
+EDIT: HackDavis proved me wrong
+
 In person hackathons will usually have food provided for you and your experience will differ, vastly. Some hackathons get catering from high-end local restaurants and other places will just order pizza. Usually it'll be a combination of both. Most of this comes down to how much funding they have but know that hackathon organizers try their best to give hackers a memorable experience.
 
 #### Hacking Ends
