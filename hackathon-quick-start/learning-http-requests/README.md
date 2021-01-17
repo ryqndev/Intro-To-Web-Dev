@@ -85,6 +85,3 @@ There's a TON of network requests that are getting displayed here so let's look 
 Phew! That was a lot to take in but now we can actually talk about why we're going to need HTTP requests to make API calls.
 
 We use HTTP requests for pretty much any time we need to reach for data that's accessible through the internet and we can make HTTP requests as many times as we want in our webapp. When we make API requests, we'll be largely using HTTP requests to get data that we can then transform using Javscript and display them to our end user in some way.
-
-
-## HTTP requests with Javascript

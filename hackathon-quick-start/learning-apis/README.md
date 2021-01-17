@@ -12,6 +12,18 @@ Spotify is a digital streaming service that streams music. Because of this busin
 
 Well, imagine we're writing a music based app - let's say an app in which users swipe left and right (like Tinder) on random songs and all the songs that they swipe right on will get saved into their own playlist. To implement this, we will "call" Spotify's Web API to to pull random songs and after the user is done swiping, we need to then call the Spotify Web API again to create a playlist, add all the swiped songs, and finally return the playlist link. Everytime we "call" the Spotify Web API, we are making an HTTP request to a specific "endpoint".
 
+## Demo:
+
+### No auth
+[disease.sh](https://disease.sh/v3/covid-19/all)
+
+### Bearer Token Auth
+[Yelp API business search endpoint](https://www.yelp.com/developers/documentation/v3/business_search)
+[Get Started Instructions](https://www.yelp.com/developers/documentation/v3/get_started)
+Needs to be called from a server
+
+### OAuth 2.0
+Login with ----
 ## Some free API's to look at
 
 [Spotify](https://developer.spotify.com/documentation/)

@@ -6,6 +6,7 @@ body {
     margin: 0;
     font-family: 'Nunito';
 }
+
 .card{
     place-self: center;
     padding: 20px;
@@ -13,4 +14,14 @@ body {
     border-radius: 4px;
 }
 
+button{
+    margin: 10px auto;
+    padding: 5px 10px;
+    border-radius: 2px;
+    border: none;
+}
 
+button:hover{
+    background-color: #999;
+    transition: background-color 350ms;
+}
